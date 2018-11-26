@@ -13,37 +13,7 @@ body {
 }
 
 .page {
-    height: 100vh;
-    max-height:100vh;
-    width:100vw;
-    display: flex;
-    justify-content: space-between;
-    flex-direction:column;
-    background-color: $primary;
-    padding: 30px;
-}
-
-.greeting {
-    margin-left:auto;
-    margin-right:auto;
-    text-align:center;
-}
-
-.greeting h3 {
-    margin-bottom: 0;
-    padding:0;
-}
-
-.greeting p {
-    margin-top: 10px;
-}
-
-.greeting h1 {
-    margin-bottom: 20px;
-}
-
-.greeting:first-child {
-    max-width: 60vw;
+    
 }
 
 h1 {
