@@ -34,12 +34,20 @@ h3 {
     width:fit-content;
     padding: 3px 10px;
     margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h4 {
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 nav {
     position:absolute;
     width: 100%;
     margin-top: 3rem;
+    z-index: 5;
 }
 
 a {
@@ -86,9 +94,31 @@ section p {
     padding:0;
 }
 
+ .content-wrapper {
+    position:absolute;
+}
+
+.first .brackets {
+    position:sticky;
+    display:flex;
+    justify-content: space-between;
+    width:90vw;
+}
+
+.fifth .brackets {
+    position:sticky;
+    display:flex;
+    justify-content: space-between;
+    width:60vw;
+}
+
 .first p {
     font-size: 22px;
     max-width: none;
+}
+
+.first .scroll-arrow {
+    cursor: pointer;
 }
 
 .fourth {
@@ -98,7 +128,7 @@ section p {
 
 .fifth {
     background-color: $primary;
-    padding-bottom: 3rem;
+    padding-bottom: 80px;
 }
 
 .button {
@@ -128,13 +158,24 @@ section p {
 }
 
 .term-box {
-    padding: 20px 30px;
+    // padding: 20px 30px;
     border: 2px solid $secondary;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align:left;
     margin: 0 10px;
-    transition: .5s ease;
+    // transition: .5s ease;
     cursor: pointer;
+}
+
+.box-top {
+    border-bottom: 2px solid $secondary;
+    padding: 20px 20px 20px 20px;
+    display:flex;
+    justify-content: center;
+}
+
+.box-bottom {
+    padding: 0 30px;
 }
 
 .term-box ul {
@@ -142,9 +183,29 @@ section p {
     padding-left:15px;
 }
 
-.term-box:hover {
-    background-color: $secondary;
-    color:white;
+// .term-box:hover {
+//     background-color: $secondary;
+//     color:white;
+// }
+
+.center {
+    margin-left:auto;
+    margin-right:auto;
+    max-width:500px;
+}
+
+.testimonial {
+    width: 75vw;
+}
+
+.testimonial img:first-child {
+    z-index: -1;
+    float: left;
+}
+
+.testimonial img:last-child {
+    z-index: -1;
+    float: right;
 }
 
 .quote {
