@@ -1,5 +1,6 @@
-$primary: #FFF85C;
-$secondary: #000000;
+$primary: #6ECCB1;
+$secondary: #EBE638;
+$contrast: #000000;
 $monotype: 'Roboto Mono', monospace;
 $header-large: 64px;
 $header-med: 28px;
@@ -30,7 +31,7 @@ h2 {
 
 h3 {
     margin: 0;
-    background-color: $primary;
+    background-color: $secondary;
     width:fit-content;
     padding: 3px 10px;
     margin-bottom: 20px;
@@ -147,7 +148,7 @@ section p {
 
 .button:hover {
     background-color: $secondary;
-    color: #fff;
+    
 }
 
 
@@ -159,7 +160,7 @@ section p {
 
 .term-box {
     // padding: 20px 30px;
-    border: 2px solid $secondary;
+    border: 2px solid $contrast;
     border-radius: 8px;
     text-align:left;
     margin: 0 10px;
@@ -168,7 +169,7 @@ section p {
 }
 
 .box-top {
-    border-bottom: 2px solid $secondary;
+    border-bottom: 2px solid $contrast;
     padding: 20px 20px 20px 20px;
     display:flex;
     justify-content: center;
@@ -184,7 +185,7 @@ section p {
 }
 
 // .term-box:hover {
-//     background-color: $secondary;
+//     background-color: $contrast;
 //     color:white;
 // }
 
