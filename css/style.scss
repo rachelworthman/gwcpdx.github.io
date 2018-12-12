@@ -1,5 +1,5 @@
-$primary: #6ECCB1;
-$secondary: #EBE638;
+$primary: #89EED1;
+$secondary: #FCF630;
 $contrast: #000000;
 $monotype: 'Roboto Mono', monospace;
 $header-large: 64px;
@@ -44,6 +44,11 @@ h4 {
     text-transform: uppercase;
 }
 
+a {
+
+    color:inherit;
+}
+
 nav {
     position:absolute;
     width: 100%;
@@ -51,9 +56,8 @@ nav {
     z-index: 5;
 }
 
-a {
-
-    color:inherit;
+nav .short-nav {
+    background-color: $primary;
 }
 
 nav ul {
@@ -93,6 +97,11 @@ section p {
     background-color: $primary;
     height: 90vh;
     padding:0;
+}
+
+.first p {
+    margin-top:10;
+    margin-bottom:60px;
 }
 
  .content-wrapper {
