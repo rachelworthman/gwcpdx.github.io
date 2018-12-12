@@ -44,8 +44,24 @@ h4 {
     text-transform: uppercase;
 }
 
-a {
+.page-title {
+    background-color: $primary;
+    font-size: 42px;
+    font-weight: 600;
+    padding: 0 .4em;
 
+}
+
+.home-link {
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+a {
     color:inherit;
 }
 
@@ -56,8 +72,13 @@ nav {
     z-index: 5;
 }
 
-nav .short-nav {
+.short-nav {
     background-color: $primary;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    padding: 3rem 0;
+    margin-top: 0;
 }
 
 nav ul {
@@ -231,4 +252,81 @@ footer {
     text-align:center;
     font-size: 14px;
     padding: 10px;
+}
+
+// TEAM
+
+section.all-members {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 130px;
+}
+
+.team-member {
+    width: 400px;
+    display:flex;
+    flex-direction:column;
+    margin:20px;
+}
+
+.photo {
+    width:100%;
+    height: 300px;
+    background-color: $primary;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.team-member:nth-child(1) .photo {
+    background-image: url(images/priya.jpg);
+}
+
+.team-member:nth-child(2) .photo {
+    background-image: url(images/molly.jpg);
+}
+
+.team-member:nth-child(3) .photo {
+    background-image: url(images/jennifer.jpg);
+}
+
+.team-member:nth-child(4) .photo {
+    background-image: url(images/harshitha.jpg);
+}
+
+.team-member:nth-child(5) .photo {
+    background-image: url(images/josh.jpg);
+}
+
+.team-member:nth-child(6) .photo {
+    background-image: url(images/rachel.jpg);
+}
+
+
+.about {
+    background-color: $secondary;
+    padding: 20px;
+    min-height: 400px;
+}
+
+p.name {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin:0;
+}
+
+p.role {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin:0;
+}
+
+p.bio {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 0;
 }
