@@ -18,10 +18,14 @@
   "homepage": "https://github.com/gwcpdx/gwcpdx.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "gulp": "^3.9.1",
+    "gulp": "^3.9.0",
     "gulp-clean-css": "^3.10.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
-    "node-sass": "^4.10.0"
+    "minimatch": "^3.0.2",
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "gulp-update": "0.0.2"
   }
 }
