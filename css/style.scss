@@ -192,11 +192,12 @@ section p {
     margin-top:50px;
     transition: .5s ease;
     cursor:pointer;
+    background-color: rgba(0,0,0,.1);
 }
 
-.button:hover {
-    background-color: $secondary;
-}
+// .button:hover {
+//     background-color: $secondary;
+// }
 
 p.disclaimer {
     font-size: $fine-print;
