@@ -228,14 +228,14 @@ p.disclaimer {
     // cursor: pointer;
 }
 
-.term-box:first-child {
+.active-term {
     background-color: $contrast;
     color:white;
     box-shadow: 0px 10px 35px 0 rgba(0,0,0,.2);
 }
 
 
-.term-box:last-child {
+.inactive-term {
     opacity: .6;
     border: 2px solid $contrast;
 }
