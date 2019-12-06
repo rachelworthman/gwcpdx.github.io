@@ -197,8 +197,8 @@ section p {
     width:fit-content;
     margin: 25px auto 0px auto;
     transition: .5s ease;
-    // cursor:pointer;
-    background-color: rgba(0,0,0,.1);
+    cursor:pointer;
+//     background-color: rgba(0,0,0,.1);
 }
 
 .fifth .button {
@@ -206,9 +206,9 @@ section p {
     margin-bottom: 0;
 }
 
-// .button:hover {
-//     background-color: $secondary;
-// }
+.button:hover {
+    background-color: $secondary;
+}
 
 p.disclaimer {
     font-size: $fine-print;
@@ -326,6 +326,10 @@ section.all-members {
     display:flex;
     flex-direction:column;
     margin:20px;
+}
+
+.team-member:nth-child(2) {
+    display:none;
 }
 
 .photo {
