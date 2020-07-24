@@ -122,6 +122,14 @@ section {
     padding: 80px 0 0 0;
 }
 
+.pt-80 {
+    padding-top:80px;
+}
+
+.mb-80 {
+    margin-bottom:80px;
+}
+
 section p {
     max-width: 500px;
     line-height: 1.6;
@@ -189,9 +197,13 @@ section p {
     width:fit-content;
     margin: 25px auto 0px auto;
     transition: .5s ease;
-    cursor:pointer;
-    // background-color: rgba(0,0,0,.1);
+   // cursor:pointer;
+    background-color: rgba(0,0,0,.1);
 }
+
+.button.disabled {
+    background-color: rgba(0,0,0,.1);
+  }
 
 .fifth .button {
 
@@ -228,14 +240,14 @@ p.disclaimer {
     // cursor: pointer;
 }
 
-.term-box:first-child {
+.active-term {
     background-color: $contrast;
     color:white;
     box-shadow: 0px 10px 35px 0 rgba(0,0,0,.2);
 }
 
 
-.term-box:last-child {
+.inactive-term {
     opacity: .6;
     border: 2px solid $contrast;
 }
@@ -318,6 +330,10 @@ section.all-members {
     display:flex;
     flex-direction:column;
     margin:20px;
+}
+
+.team-member:nth-child(2) {
+    display:none;
 }
 
 .photo {
@@ -449,6 +465,60 @@ p.bio {
     background-image:url(images/gwc-11.png);
 }
 
+
+
+// Contact page
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: $primary;
+    color: $contrast;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight:bold;
+    font-size: 14px;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  #contact .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 550px;
+  }
+
+  #contact form {
+      text-align: left;
+  }
+
+  label {
+      text-align: left;
+  }
+
+  
+
 // MEDIA QUERIES
 
 @media (max-width: 1050px) {
@@ -510,6 +580,10 @@ p.bio {
         min-height:fit-content;
     }
 
+    .pt-40 {
+        padding-top:40px;
+    }
+
     nav li a {
         font-size: 14px;
     }
@@ -532,6 +606,10 @@ p.bio {
     }
 
     section.all-members {
+        margin-bottom: 40px;
+    }
+
+    .mb-40 {
         margin-bottom: 40px;
     }
 
@@ -561,4 +639,3 @@ p.bio {
         font-size: 14px;
     }
 }
-
