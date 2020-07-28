@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
 $primary: #89EED1;
 $secondary: #FCF630;
 $contrast: #000000;
-$monotype: 'Roboto Mono', monospace;
+$monotype: 'DM Mono', monospace;
 $header-large: 64px;
 $header-med: 28px;
 $fine-print: 12px;
@@ -11,8 +13,6 @@ $mobile-h1: 32px;
 $mobile-h2: 24px;
 $mobile0-h3: 18px;
 $mobile-p: 16px;
-
-
 
 body {
     margin:0;
@@ -107,10 +107,12 @@ nav ul li {
     margin-left:25px;
     margin-right:25px;
     font-size: 18px;
+    transition: 1s ease-in-out;
+    
 }
 
 nav ul li:hover {
-    font-weight: 700;
+    background-color: white;
 }
 
 section {

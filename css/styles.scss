@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+$primary: #89EED1;
+$primary-dark: #76E3C4;
+$secondary: #FCDB30;
+$contrast: #000000;
+$light: #ffffff;
+$gray: #F2F2F2;
+$navy: #063B54;
+$font: 'DM Mono', monospace;
+
+body {
+    font-family: $font;
+    margin:0;
+    padding:0;
+}
+
+.mw-lg {
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:30px;
+    padding-right:30px;
+//    background-color:lightpink;
+}
+
+ul {
+    padding-left:1.5rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin:.5rem 0 0 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom:1rem;
+    margin-top:0;
+}
+
+div.online {
+    background-color:$secondary;
+    padding:.3rem .8rem;
+    width:fit-content;
+    font-size: 18px;
+    font-weight:600;
+    height: fit-content;
+    text-transform:uppercase;
+    transform:translate(-40px, 24px) rotate(-23deg);
+    border-radius:4px;
+}
+
+h3 {
+    // background-color:$light;
+    // padding:.3rem .8rem;
+    width:fit-content;
+    margin:0;
+}
+
+h4 {
+    font-weight: 500;
+    line-height: 1.7rem;
+    margin: .5rem 0;
+}
+
+a {
+    color:$contrast;
+    text-decoration:none;
+}
+
+p {
+    line-height:1.6;
+}
+
+button {
+    border:none;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    font-family: $font;
+    font-weight:500;
+    border-radius:3px;
+    background-color: $primary;
+    height:fit-content;
+    width:fit-content;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: $primary-dark;
+    transition: 200ms ease-in-out;
+}
+
+
+nav {
+    background-color:$light;
+    border-bottom:1px solid $contrast;
+    z-index:100;
+    position:fixed;
+    overflow:hidden;
+    top:0;
+    width:100%;
+}
+
+nav div {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:1.2rem;
+    padding-bottom:1.2rem;
+}
+nav div ul {
+    display:flex;
+    justify-content:space-between;
+    width:600px;
+    align-self: flex-start;
+    padding:0;
+}
+
+nav li {
+    list-style: none;
+    background-color:rgba(255,255,255,0);
+    padding:.3rem .5rem;
+    transition: background-color .5s ease;
+    border-radius:4px;
+}
+
+nav li:hover {
+    background-color:$secondary;
+}
+
+
+
+nav div button {
+    padding: .8rem 2rem;
+}
+
+.top {
+    margin-top:7rem;
+}
+
+section.main {
+    margin-top:7rem;
+   // display:flex;
+   background-image:url("images/gwc-header.svg");
+   background-repeat:no-repeat;
+   background-position: right top;
+   height:35rem;
+}
+
+section.main img {
+    margin-top:1.5rem;
+}
+
+.hero-text {
+    padding-top:3rem;
+    padding-bottom:3rem;
+    width:45vw;
+}
+
+.hero-text button {
+    margin-top:3rem;
+}
+
+p.sm {
+    font-size: .8rem;
+    padding-top:.8rem;
+}
+
+section.details {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    height: 600px;
+}
+
+ .info {
+    max-width: 50%;
+    min-width: 350px;
+    margin-bottom: 4rem;
+    height: fit-content;
+    // margin-left: auto;
+    // margin-right: auto;
+}
+
+.info li {
+    margin-bottom:1rem;
+}
+
+.info span {
+    font-weight:700;
+}
+
+footer {
+    background-color:$primary;
+    bottom:0;
+    padding:.5rem;
+    text-align:center;
+}
+
+
+// TEAM
+
+section.all-members {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.team-member {
+    width:350px;
+    display:flex;
+    flex-direction:column;
+    margin:20px;
+}
+.photo {
+    width:100%;
+    height: 300px;
+    background-color: $primary;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.team-member:nth-child(1) .photo {
+    background-image: url(images/priya-1.jpg);
+}
+
+.team-member:nth-child(2) .photo {
+    background-image: url(images/harshitha.jpg);
+}
+
+.team-member:nth-child(3) .photo {
+    background-image: url(images/josh.jpg);
+}
+
+.team-member:nth-child(4) .photo {
+    background-image: url();
+}
+
+.team-member:nth-child(5) .photo {
+    background-image: url(images/rachel-1.jpg);
+}
+
+
+.about {
+    background-color: $secondary;
+    padding: 20px;
+    min-height: 400px;
+}
+
+p.name {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin:0;
+}
+
+p.role {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin:0;
+}
+
+p.bio {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.details-team {
+    display:flex;
+    
+}
+
+
+@media (max-width:930px) {
+    nav ul {
+
+    }
+
+    section.main {
+        background-image:none;
+        height: 30rem;
+    }
+
+    .hero-text {
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+        width:75vw;
+    }
+
+    section.details {
+        flex-direction:column;
+        justify-content:center;
+        height:fit-content;
+    }
+
+    .info {
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    
+
+}
+
+@media (max-width:450) {
+    
+}
