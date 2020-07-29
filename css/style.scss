@@ -334,9 +334,9 @@ section.all-members {
     margin:20px;
 }
 
-.team-member:nth-child(2) {
-    display:none;
-}
+// .team-member:nth-child(2) {
+//     display:none;
+// }
 
 .photo {
     width:100%;
@@ -351,23 +351,23 @@ section.all-members {
     background-image: url(images/priya-1.jpg);
 }
 
+// .team-member:nth-child(2) .photo {
+//     background-image: url(images/molly.jpg);
+// }
+
+// .team-member:nth-child(3) .photo {
+//     background-image: url(images/jennifer.jpg);
+// }
+
 .team-member:nth-child(2) .photo {
-    background-image: url(images/molly.jpg);
-}
-
-.team-member:nth-child(3) .photo {
-    background-image: url(images/jennifer.jpg);
-}
-
-.team-member:nth-child(4) .photo {
     background-image: url(images/harshitha.jpg);
 }
 
-.team-member:nth-child(5) .photo {
+.team-member:nth-child(3) .photo {
     background-image: url(images/josh.jpg);
 }
 
-.team-member:nth-child(6) .photo {
+.team-member:nth-child(4) .photo {
     background-image: url(images/rachel-1.jpg);
 }
 
