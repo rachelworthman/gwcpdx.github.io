@@ -129,7 +129,7 @@ section.main {
   background-image: url("images/gwc-header.svg");
   background-repeat: no-repeat;
   background-position: right top;
-  height: 35rem;
+  min-height: 35rem;
 }
 
 section.main img {
@@ -160,7 +160,7 @@ section.details {
 
 .info {
   max-width: 50%;
-  min-width: 350px;
+  min-width: 330px;
   margin-bottom: 4rem;
   height: fit-content;
 }
@@ -274,6 +274,35 @@ p.bio {
   .info {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (max-width: 600px) {
+  nav div ul {
+    margin: 0;
+    display: block;
+  }
+
+  .info {
+    max-width: 350px;
+    min-width: 0;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .mw-sm {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  button {
+    padding: 1rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  footer p {
+    font-size: 12px;
   }
 }
 
