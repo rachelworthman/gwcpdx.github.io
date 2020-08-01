@@ -23,6 +23,10 @@ body {
 //    background-color:lightpink;
 }
 
+.underline {
+    text-decoration:underline;
+}
+
 ul {
     padding-left:1.5rem;
 }
@@ -144,7 +148,7 @@ section.main {
    background-image:url("images/gwc-header.svg");
    background-repeat:no-repeat;
    background-position: right top;
-   min-height:35rem;
+   height:35rem;
 }
 
 section.main img {
@@ -174,8 +178,6 @@ section.details {
 }
 
  .info {
-    max-width: 50%;
-    min-width: 330px;
     margin-bottom: 4rem;
     height: fit-content;
     // margin-left: auto;
@@ -213,6 +215,10 @@ section.all-members {
     flex-direction:column;
     margin:20px;
 }
+
+.team-member:nth-child(4) {
+    display:none;
+}
 .photo {
     width:100%;
     height: 300px;
@@ -242,6 +248,11 @@ section.all-members {
     background-image: url(images/rachel-1.jpg);
 }
 
+.team-member:nth-child(6) .photo {
+    background-image: url(images/Blucher_profile.png);
+    background-size: 105%;
+}
+
 
 .about {
     background-color: $secondary;
@@ -269,9 +280,80 @@ p.bio {
 }
 
 .details-team {
+    margin:0 auto;
     display:flex;
-    
+    justify-content: space-between;
 }
+
+.details-team .image {
+    background-image:url('../images/logistics.svg');
+    background-size:contain;
+    background-repeat:no-repeat;
+    height:400px;
+}
+
+
+// ALUMNI WORK
+
+#work .work-container {
+    width:100%;
+    display:flex;
+    flex-direction:inherit;
+    padding-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+#work .work-item {
+    width: 400px;
+    height: 200px;
+    background-color:lightslategray;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    margin: 0 20px 40px 20px;
+    border: solid 2px rgb(223, 223, 223);
+}
+
+#work a:nth-child(1) .work-item{
+    background-image:url(images/gwc-2.png);
+}
+
+#work a:nth-child(2) .work-item{
+    background-image:url(images/gwc-3.png);
+}
+
+#work a:nth-child(3) .work-item{
+    background-image:url(images/gwc-4.png);
+}
+
+#work a:nth-child(4) .work-item{
+    background-image:url(images/gwc-5.png);
+}
+
+#work a:nth-child(5) .work-item{
+    background-image:url(images/gwc-6.png);
+}
+
+#work a:nth-child(6) .work-item{
+    background-image:url(images/gwc-7.png);
+}
+
+#work a:nth-child(7) .work-item{
+    background-image:url(images/gwc-8.png);
+}
+
+#work a:nth-child(8) .work-item{
+    background-image:url(images/gwc-9.png);
+}
+
+#work a:nth-child(9) .work-item{
+    background-image:url(images/gwc-10.png);
+}
+
+#work a:nth-child(10) .work-item{
+    background-image:url(images/gwc-11.png);
+}
+
 
 
 @media (max-width:930px) {
@@ -291,10 +373,8 @@ p.bio {
         width:75vw;
     }
 
-    section.details {
-        flex-direction:column;
-        justify-content:center;
-        height:fit-content;
+    .details-team .image {
+        display:none;
     }
 
     .info {
@@ -312,20 +392,25 @@ p.bio {
         display:block;
     }
 
-
-
-    .info {
-        max-width: 350px;
-        min-width: 0;
-    }
-
     h1 {
         font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
     }
 
     .mw-sm {
         padding-left:20px;
         padding-right:20px;
+    }
+
+    .details-team .image {
+        display:none;
+    }
+
+    .info {
+        width: 100%;
     }
 
     button {
