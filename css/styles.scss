@@ -128,7 +128,7 @@ nav li {
     border-radius:4px;
 }
 
-nav li:hover {
+nav li:hover, .active {
     background-color:$secondary;
 }
 
@@ -249,7 +249,7 @@ section.all-members {
 }
 
 .team-member:nth-child(6) .photo {
-    background-image: url(images/Blucher_profile.png);
+    background-image: url(images/Blucher_Profile.png);
     background-size: 105%;
 }
 
