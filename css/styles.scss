@@ -216,9 +216,6 @@ section.all-members {
     margin:20px;
 }
 
-.team-member:nth-child(4) {
-    display:none;
-}
 .photo {
     width:100%;
     height: 300px;
@@ -241,7 +238,7 @@ section.all-members {
 }
 
 .team-member:nth-child(4) .photo {
-    background-image: url();
+    background-image: url(images/Pankhuri.png);
 }
 
 .team-member:nth-child(5) .photo {
