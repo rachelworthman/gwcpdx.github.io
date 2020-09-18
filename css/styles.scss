@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
-$primary: #89EED1;
+$primary:#89EED1;
 $primary-dark: #76E3C4;
 $secondary: #FCDB30;
 $contrast: #000000;
@@ -94,6 +94,12 @@ button:hover {
     transition: 200ms ease-in-out;
 }
 
+button.closed {
+    background-color: $primary-dark;
+    pointer-events:none;
+    opacity:.5;
+}
+
 
 nav {
     background-color:$light;
@@ -136,6 +142,7 @@ nav li:hover, .active {
 
 nav div button {
     padding: .8rem 2rem;
+    display:none;
 }
 
 .top {
