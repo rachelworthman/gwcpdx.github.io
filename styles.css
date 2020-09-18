@@ -82,6 +82,12 @@ button:hover {
   transition: 200ms ease-in-out;
 }
 
+button.closed {
+  background-color: #76E3C4;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 nav {
   background-color: #ffffff;
   border-bottom: 1px solid #000000;
@@ -122,6 +128,7 @@ nav li:hover, .active {
 
 nav div button {
   padding: 0.8rem 2rem;
+  display: none;
 }
 
 .top {
